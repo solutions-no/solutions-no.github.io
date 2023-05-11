@@ -111,7 +111,46 @@
     <a class="nav-link" href="Løsninger%20to-be.html">Løsninger to-be</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="Altinn%20Broker%20to-be.html">Altinn Broker to-be</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Brukerbehov.html">Brukerbehov</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Use%20cases%20for%20meldingsutveksling.html">Use cases for meldingsutveksling</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Tjenestekvalitet.html">Tjenestekvalitet</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Epics%20og%20user%20stories.html">Epics og user stories</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Kundespesifikke%20krav.html">Kundespesifikke krav</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="6">
+    <a class="nav-link" href="Spek.%20fra%20Helse%20Møre%20og%20Romsdal.html">Spek. fra Helse Møre og Romsdal</a>
+  </li>
+  <li class="nav-item" data-depth="6">
+    <a class="nav-link" href="Krav%20fra%20NHN.html">Krav fra NHN</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Altinn%20Broker%203.0%20transition%20architectures.html">Altinn Broker 3.0 transition architectures</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="Altinn%20Broker%203.0%20forslag%201%20(utkast).html">Altinn Broker 3.0 forslag 1 (utkast)</a>
+  </li>
+</ul>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="Altinn%20Correspondance%20to-be.html">Altinn Correspondance to-be</a>
@@ -384,6 +423,264 @@
 <div class="sectionbody">
 <div class="paragraph">
 <p>..</p>
+</div>
+<div class="sect2">
+<h3 id="_brukerbehov"><a class="anchor" href="#_brukerbehov"></a>Brukerbehov</h3>
+<div class="sect3">
+<h4 id="_use_cases_for_meldingsutveksling"><a class="anchor" href="#_use_cases_for_meldingsutveksling"></a>Use cases for meldingsutveksling</h4>
+<div class="paragraph">
+<p>View dok, Geneiske use cases</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="https://solutions-no.github.io/models/archi/?view=id-3dbf070102174bb9aaca24d85a6d6005"><img src="_images/Use%20cases%20for%20meldingsutveksling.png" alt="Use cases for meldingsutveksling image"></a>
+</div>
+<div class="title">Figure 1. Use cases for meldingsutveksling</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_tjenestekvalitet"><a class="anchor" href="#_tjenestekvalitet"></a>Tjenestekvalitet</h4>
+
+</div>
+<div class="sect3">
+<h4 id="_juridiske_forhold"><a class="anchor" href="#_juridiske_forhold"></a>Juridiske forhold</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Gjeldende lovpålagte krav. Eksempel: GDPR med krav til dataminimering mv.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Langtidslaging (arkivering)</p>
+</li>
+<li>
+<p>Dokumentasjon av etterlevelse</p>
+</li>
+<li>
+<p>Sporing av data -  dataproveniens
+= Egenskaper relatert til organisatorisk samhandling</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Type forretningsprosess. Eksempler: Bilateral prosess mellom to kjente parter (herunder spørring og forhåndsavtalt, periodisk distriusjon); Tverrgående prosess mellom faste parter; Tverrgående prosess mellom dynamiske oppdagete parter.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Antall samhandlingsparter</p>
+<div class="ulist">
+<ul>
+<li>
+<p>En-til-en, en-til-mange, mange-til-mange, mange-til-en</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Kjente eller ukjente mottakere</p>
+</li>
+<li>
+<p>Fast eller dynamisk gruppe med samhandlingsparter</p>
+</li>
+<li>
+<p>Prosessens levetid. Relevant for feilhåndtering: Kortlevde prosesser med innebygd transaksjonssikkerhet kan tilbakerulles gjennom generelle mekanismer, f.eks. slik dette støttes av rollback i relasjonsdatabaser. Langlevde prosesser krever skreddersydde kompensasjonsaksjoner.</p>
+</li>
+<li>
+<p>Roler og ansvar. Hvem skal ha ansvar for hva? Hvem sier om du får tilgang til opplysninger eller ikke?
+= Egenskaper relatert til semantisk interoperabilitet</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Støtte for felles datamodeller (core vocabularies)</p>
+</li>
+<li>
+<p>Støtte for aktuelle utvekslingsformater</p>
+</li>
+<li>
+<p>Støtte for lenking av data
+= Egenskaper relatert til teknisk samhandling</p>
+</li>
+<li>
+<p>Utvekslingsprotokoller</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Synkron eller asynkron kommunikasjon</p>
+</li>
+<li>
+<p>Støtte for utveklsingsprotokoller som f.eks. SOAP og REST</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Tjenestekvalitet (QoS  refers to the maintenance of the session once established and covers aspects such as throughput, error recovery/detection)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Meldingsstørrelse</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Størrelse på enkeltvedlegg vs. samlede vedlegg?</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Leveringstid for meldinger. Mål: Mikrosekunder, millisekunder, sekunder, timer, dager</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Garantert leveringstid vs. krav til leveringstid</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Responstid for spørringer. Mål: Mikrosekunder, millisekunder, sekunder, timer, dager</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Garantert responstid vs. krav til responstid</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Leveringssikkerhet. Mål: Prosentvis sannsynlighet for vellykket levering og mottak</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Grad av garantert levering (uten behov for tilbakemelding på applikasjonslaget)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Lagringstid for data og logger</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Tjenestegrad - GoS refers to the ability to access and establish services and includes the time required to establish sessions, system reliability (assessment of mean time before failure (MTBF) and meant time to repair (MTTR) for example) and recovery and system resilience (i.e. how it degrades).</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Service establishment time</p>
+</li>
+<li>
+<p>System reliability</p>
+</li>
+<li>
+<p>System MTBF</p>
+</li>
+<li>
+<p>System MTTR</p>
+</li>
+<li>
+<p>Nettverkskvalitet
+= Andre egenskaper</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Føringer</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Prinsipper. sempel Digdirs overordnede arkitekturprinsipper</p>
+</li>
+<li>
+<p>Standarder. 	Eksempel: Standarder i Referansekatalogen</p>
+</li>
+<li>
+<p>Avtaler</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Kompetanse</p>
+</li>
+<li>
+<p>Kompleksitet</p>
+</li>
+<li>
+<p>Kostnader</p>
+</li>
+<li>
+<p>Informasjonssikkerhet og personvern</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Risikoanalyser</p>
+</li>
+<li>
+<p>Kvalitetskrav for konfidensialitet, integritet og tilgjengelighet</p>
+</li>
+<li>
+<p>Mekanismer for autentisering, autorisasjon, kryptering, ikke-benektelse, mv.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="https://solutions-no.github.io/models/archi/?view=id-05bb763935d4410e891efbbd8c289a77"><img src="_images/Tjenestekvalitet.png" alt="Tjenestekvalitet image"></a>
+</div>
+<div class="title">Figure 2. Tjenestekvalitet</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_epics_og_user_stories"><a class="anchor" href="#_epics_og_user_stories"></a>Epics og user stories</h4>
+<div class="paragraph">
+<p>&#8230;&#8203;</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_kundespesifikke_krav"><a class="anchor" href="#_kundespesifikke_krav"></a>Kundespesifikke krav</h4>
+<div class="paragraph">
+<p>&#8230;&#8203;</p>
+</div>
+<div class="sect4">
+<h5 id="_spek_fra_helse_møre_og_romsdal"><a class="anchor" href="#_spek_fra_helse_møre_og_romsdal"></a>Spek. fra Helse Møre og Romsdal</h5>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="https://solutions-no.github.io/models/archi/?view=id-037eaef0cbd4488c8d8ebd19c185ace4"><img src="_images/Spek.%20fra%20Helse%20Møre%20og%20Romsdal.png" alt="Spek. fra Helse Møre og Romsdal image"></a>
+</div>
+<div class="title">Figure 3. Spek. fra Helse Møre og Romsdal</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_krav_fra_nhn"><a class="anchor" href="#_krav_fra_nhn"></a>Krav fra NHN</h5>
+<div class="paragraph">
+<p>&#8230;&#8203;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_altinn_broker_3_0_transition_architectures"><a class="anchor" href="#_altinn_broker_3_0_transition_architectures"></a>Altinn Broker 3.0 transition architectures</h3>
+<div class="sect3">
+<h4 id="_altinn_broker_3_0_forslag_1_utkast"><a class="anchor" href="#_altinn_broker_3_0_forslag_1_utkast"></a>Altinn Broker 3.0 forslag 1 (utkast)</h4>
+<div class="paragraph">
+<p>View dok&#8230;&#8203;</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="https://solutions-no.github.io/models/archi/?view=id-3a9f8a7eb8284d66b84579f2e6ecc69e"><img src="_images/Altinn%20Broker%203.0%20forslag%201%20(utkast).png" alt="Altinn Broker 3.0 forslag 1 (utkast) image"></a>
+</div>
+<div class="title">Figure 4. Altinn Broker 3.0 forslag 1 (utkast)</div>
+</div>
+</div>
 </div>
 </div>
 </div>
